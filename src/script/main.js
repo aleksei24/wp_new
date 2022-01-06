@@ -7,7 +7,7 @@ body.append(wrapper);
 wrapper.append(headline);
 
 // images
-import autumn from '../images/golden-autumn.jpg';
+import autumn from '../images/golden-autumn.jpg?as=webp';
 
 const myImg = new Image();
 myImg.src = autumn;
