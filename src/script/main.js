@@ -2,6 +2,7 @@ const body = document.querySelector('body');
 const wrapper = document.createElement('div');
 wrapper.setAttribute('id', 'wrapper');
 const headline = document.createElement('h1');
+headline.setAttribute('id', 'headline');
 headline.textContent = 'New Webpack Template';
 body.append(wrapper);
 wrapper.append(headline);
