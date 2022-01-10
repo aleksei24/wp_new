@@ -5,6 +5,7 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  mode: 'production',
   entry: {
     main: path.resolve(__dirname, './src/index.js'),
   },
@@ -57,6 +58,7 @@ module.exports = {
     minimizer: [
       '...',
       new ImageMinimizerPlugin({
+        deleteOriginalAssets: true,
         generator: [
           {
             preset: 'webp',
@@ -68,5 +70,15 @@ module.exports = {
         ],
       }),
     ],
+  },
+
+  devServer: {
+    historyApiFallback: false,
+    open: true,
+    compress: true,
+    hot: false,
+    port: 8080,
+    liveReload: true,
+    watchFiles: ['src/*.html'],
   },
 };
