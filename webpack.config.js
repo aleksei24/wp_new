@@ -4,8 +4,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const mode = process.env.NODE_ENV || 'development';
+
 module.exports = {
-  mode: 'production',
+  mode: mode,
   entry: {
     main: path.resolve(__dirname, './src/index.js'),
   },
@@ -19,6 +21,7 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       title: 'new webpack template',
+      favicon: './src/images/lift.ico',
       template: path.resolve(__dirname, './src/template.html'),
       filename: 'index.html',
     }),
@@ -71,6 +74,8 @@ module.exports = {
       }),
     ],
   },
+
+  devtool: mode ? 'eval-source-map' : 'none',
 
   devServer: {
     historyApiFallback: false,

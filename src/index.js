@@ -3,5 +3,6 @@ import './script/main';
 import './script/class';
 
 // styles
-import './styles/fonts.css';
-import './styles/style.css';
+import './styles/fonts.scss';
+import './styles/default.scss';
+import './styles/main.scss';

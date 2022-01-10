@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "dev": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
     "image-minimizer-webpack-plugin": "^3.2.1",
