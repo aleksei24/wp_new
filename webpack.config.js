@@ -54,6 +54,24 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
+
+      // HTML
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+        options: {
+          sources: {
+            list: [
+              '...',
+              {
+                tag: 'audio',
+                attribute: 'src',
+                type: 'src',
+              },
+            ],
+          },
+        },
+      },
     ],
   },
 
