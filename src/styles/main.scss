@@ -30,6 +30,7 @@ button:before {
   content: attr(data-icon);
   color: rgb(44, 44, 44);
   text-shadow: 1px 1px 0px black;
+  font-family: 'HeydingsControls';
 }
 
 button {

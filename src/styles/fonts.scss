@@ -5,3 +5,8 @@ $mainFont: 'Island Moments';
 #wrapper {
   font-family: $mainFont, cursive;
 }
+
+@font-face {
+  font-family: 'HeydingsControls';
+  src: url('../font/heydings_controls-webfont.woff');
+}
