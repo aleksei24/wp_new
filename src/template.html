@@ -4,7 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Audio Test</title>
   </head>
-  <body></body>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <h1 id="headline"></h1>
+        <div id="img"></div>
+        <div id="audio">
+          <audio controls>
+            <source
+              src="https://res.cloudinary.com/dn6x2uyx5/video/upload/v1645098269/audio/Rosa_Wolke_gwshci.mp3"
+              type="audio/mp3"
+            />
+          </audio>
+          <div id="audio-controls">
+            <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+            <button class="stop" data-icon="S" aria-label="stop"></button>
+            <div class="timer">
+              <div></div>
+              <span aria-label="timer">00:00</span>
+            </div>
+            <button class="rwd" data-icon="B" aria-label="rewind"></button>
+            <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
