@@ -1,6 +1,5 @@
 // js
 import './script/main';
-import './script/audio';
 
 // styles
 import './styles/fonts.scss';
