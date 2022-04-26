@@ -1,4 +1,18 @@
 #headline {
   font-size: 2rem;
   text-align: center;
+  padding: 2em 0;
+}
+#explain {
+  text-align: center;
+  font-size: 1.25rem;
+  padding-bottom: 1.5em;
+}
+#lastResult {
+  color: white;
+  padding: 1.25rem;
+}
+#guessField {
+  border: 1px solid black;
+  border-radius: 0.25rem;
 }

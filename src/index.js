@@ -1,5 +1,6 @@
 // js
 import './script/main';
+import './script/guessTheNumber';
 
 // styles
 import './styles/fonts.scss';
