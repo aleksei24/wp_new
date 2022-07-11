@@ -186,3 +186,22 @@ button {
     }
   }
 }
+
+.list-set-timer {
+  &__item {
+    border: 1px solid grey;
+    border-bottom: 0px;
+    padding: em(10) em(20);
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(156, 228, 250);
+    }
+    &:first-child {
+      border-radius: 5px 5px 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 5px 5px;
+      border-bottom: 1px solid grey;
+    }
+  }
+}
